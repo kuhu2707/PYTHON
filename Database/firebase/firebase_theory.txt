@@ -1,0 +1,27 @@
+-----------------FIREBASE-------------------
+it is simply a google cloud service 
+services provided by firebase:
+   - hosting
+   - databse - it provide 2 types of database = realtime databse and cloud firestore
+   - storage 
+   - authentication 
+
+
+---------setup firebase---------------
+1 . go to official website and sign in
+2 . go to console 
+3 . click create a project and enter your project name
+4 . then enable google analytics 
+5 . configure google analytics - choose default acc to firebase and click on create project
+6. project setup in completed here 
+
+------------integrate firebase--------------------
+1 . go to your project created and click to </> web icon 
+2 . register app 
+3 . then continue to the console or add sdk to your application
+
+
+
+----for pyhton----
+1 . pip install firebase_admin 
+go to project overview -> project setting -> service accounts -> down the page -> copy the sdk of node.js -> paste the code in credentials.json file 

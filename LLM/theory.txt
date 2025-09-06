@@ -1,0 +1,80 @@
+LLM - LARGE LANGUAGE MODELS
+it is a neural ntwk designed to understand , generate and respond to human like text 
+ 
+why this language model is called as large :
+  - large bcoz models have billions , trillions of parameters
+  - language model as these models do a wide range of NLP taks : question answering , translation , sentiment analysis and much more
+
+LLM  v/s earlier NLP models:
+   - llm can do wide range of nlp taks
+   - nlp is designed for specific taks like language translation 
+   - earlier languge models could not write an email from custom instructions , a task that is trivial for modern llm'sentiment
+
+what makes LLm's so good : Transformer Architecture
+
+llm vs gen ai vs dl vs ml 
+  - AI-> ML -> DL -> LLM
+  - AI - remote which have intellgent like human 
+  - ML - models which learn form data it not only involve neural ntwk but also have many others like decision tress
+  - DL- based on neural ntwk
+  - LLM - only deal with text
+  - GEN AI = LLM + DL (using dl neural ntwk to create new content such as text , images , various forms of media but llm only deals with text that wahy it is mixture of both)
+
+Application of LLM = content creation , sentiment analysis , novel text generation , machine translation , chatbots / virtual assistent
+
+Stages of building LLM'S: 2 Stages
+   - pre-training = training on a large , diverse dataset
+   - finetuning = refinement by training on narrower dataset , specific to a particular task or domain
+        - instruction fineturing = labeled dataset consists of instruction - answer pairs eg: text translation , airline customer support
+        - fineturing for classification taks = labeled dataset consists of text and associated labels ,eg : emial as spam and unspam
+
+  
+-------------TRANFORMERS------------
+most modern llm's relay on the transformers arhitecture - deep neural ntwk architecture introduced in 2017 paper 
+original tranformer - developed for machine translation - english text to german anf french
+Its architecture consists of : encoder(encodes input text into vectors) , decoder(generates output text from encoded vectos)
+Later variations of transformer architecture : 
+  - BERT - Biderectional Encoder Representations Transformers = predicts hidden words in a given sentence 
+  - GPT Modles - Generative PreTrained Tranformers = generate new words
+
+Tranformers vs llm
+   - not all tranformer are llm's . tranformer can also be used for computer vision
+   - not all llm are tranformer . llm can be based on recurrent or convolutional architecture as well
+
+Common Tranformers models are:
+    - text to text = BERT , GPT
+    - text to image - DALL-E , Stable Diffusion 
+    - text to vedio - OpenAI Sora
+
+Embedding : is numeric representation of text in form of a vectors such that you can capture the meaning of that text
+vector db - allows to store these embedding and perform suffiecient search on these embeddings 
+
+Tokenization algo:
+1. word based 
+2 . character based
+3. sub-word - BYTE-PAIR TOKENIZER 
+    - do not split frequntly used words into smaller subwords
+    - split the rare words into smaller , meaningful subwords
+
+BPE - BYTE PAIR ENCODING is a subword tokenization algorithm
+
+
+-----HUGGING FACE-----
+it is a library that provides pre trained language models for NLP 
+these models are based on deep learning algorithms 
+we don't have to train a model from scratch , just load a pre-trained model and fine-tune in to our specific task
+it is ease of use , have simple interface and have active communtiy support 
+
+Hugging Face Ecosystem: consist of HUB , Libraries , The inference API , Gradio 
+1 . HUB - the platform with models , datasets and demo Application . it works as a central place for all things related to ml 
+2 . Libraries -  tranformers and diffusers libraries 
+   -tranformers are open-source library , that provides APIs and tools , ao we can easily download and train , build on PyTorch framework but can also be used with tensorflow and JAX  
+   -diffusers library is the new addition to the hugging face ecosystem , it provides a way to easily share version and reproduce pre-trained diffusion models for computer vision and audio task 
+3 . Inference API - the Inference API allows you to integrate NLP models into your existing applications without having to write complex code
+4 . Gradio - Let's say you built a model and want to move it into a production environment To do this you can use the Gradio library on Hugging Face This library allows you To build a web application in a minute
+
+
+
+---------------------LANGCHAIN---------------
+it is the framework that allow us to build applications on top of LLM 
+

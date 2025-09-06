@@ -1,0 +1,11 @@
+------------STREAMLIT----------------
+it is a python framework for developing web pplications especially for data science , ml and ai in short time 
+
+advantage:
+  - compartible with scikit , keras , numpy , pandas , tensorflow 
+  - maximise development speed 
+  - safe n secure web app development 
+  - no html , css , jv coding is required 
+  - easy to deploy 
+
+  
